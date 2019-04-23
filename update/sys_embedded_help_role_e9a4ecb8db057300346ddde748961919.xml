@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_328385_taxii_dri.cti_domain_objects_user" name="x_328385_taxii_dri.cti_domain_objects_user">25a4ecb8db057300346ddde748961917</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 18:25:39</sys_created_on>
+        <sys_id>e9a4ecb8db057300346ddde748961919</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>25a4ecb8db057300346ddde748961917</sys_name>
+        <sys_package display_value="TAXII-Driver" source="x_328385_taxii_dri">e076e728db417300346ddde7489619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TAXII-Driver">e076e728db417300346ddde7489619e2</sys_scope>
+        <sys_update_name>sys_embedded_help_role_e9a4ecb8db057300346ddde748961919</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 18:25:39</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

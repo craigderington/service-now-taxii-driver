@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>TAXII Poll Collection</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2019-04-23 18:55:01</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>on_demand</run_type>
+        <script><![CDATA[(function () {
+	
+	// declare our script REST variables
+	var gdt = new GlideDateTime();
+    var gt = gdt.getLocalTime();	
+		
+	var beginDate = gdt.getLocalDate() + "T" + gt.getByFormat("hh:mm:ss") + "Z";
+	var endDate = gdt.getLocalDate() + "T" + gt.getByFormat("hh:mm:ss") + "Z";
+	var message_id = "1001";
+	var collection_name = "guest.Abuse_ch";
+	var arrQueryParams = [beginDate, endDate, message_id, collection_name];
+	gs.info("TAXII Driver Request Body: " + arrQueryParams.toString());
+	
+	
+	try {
+	    // create the rest message instance
+		var r = new sn_ws.RESTMessageV2('x_328385_taxii_dri.TAXII-Driver', 'Poll Collection');
+		r.setLogLevel('all');
+		r.setStringParameterNoEscape('collection_name', collection_name);
+		r.setStringParameterNoEscape('begin_date', '2016-03-02T12:00:00Z');
+		r.setStringParameterNoEscape('end_date', '2016-03-03T12:00:00Z');
+		r.setStringParameterNoEscape('message_id', message_id);
+
+	    //override authentication profile 
+	    //authentication type ='basic'/'oauth2'
+	    r.setAuthenticationProfile('basic', 'bef99cf0db057300346ddde74896196a');
+
+	    //set a MID server name if one wants to run the message on MID
+	    //r.setMIDServer('MY_MID_SERVER');	   
+	    //r.setEccParameter('skip_sensor', true);
+
+		// execute the call to the opentaxxii service
+		var response = r.execute();
+		var responseBody = response.getBody();
+		var httpStatus = response.getStatusCode();
+		
+		if (httpStatus === 200) {
+			
+			// show the status
+			gs.info("TAXII Driver HTTP Status: " + httpStatus);
+			
+			// set up the xml document
+			var xmlDoc = new XMLDocument2();
+			
+			// parse the response
+			xmlDoc.parseXML(responseBody);
+			
+			// declare vars from xml body
+			// var indicatorId = xmlDoc.getNodeText("//indicator.Title");
+			gs.info("TAXII Driver XML Response: " + xmlDoc.toString());			
+					
+			
+		} else {
+			// log the error
+			gs.info("TAXII Driver HTTP Error: " + httpStatus);
+		}
+	}
+	
+	catch (ex) {
+		var message = ex.message;
+		gs.info("TAXII Driver Error: " + message);
+	}
+	
+})();]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 19:56:42</sys_created_on>
+        <sys_id>6b5b6c70db457300346ddde74896195d</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>TAXII Poll Collection</sys_name>
+        <sys_package display_value="TAXII-Driver" source="x_328385_taxii_dri">e076e728db417300346ddde7489619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TAXII-Driver">e076e728db417300346ddde7489619e2</sys_scope>
+        <sys_update_name>sysauto_script_6b5b6c70db457300346ddde74896195d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 21:32:40</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>

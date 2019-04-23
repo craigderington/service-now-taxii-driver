@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_auth_profile_basic">
+    <sys_auth_profile_basic action="INSERT_OR_UPDATE">
+        <name>HailATAXII</name>
+        <password>K34c0fG5xvY=</password>
+        <sys_class_name>sys_auth_profile_basic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 17:39:21</sys_created_on>
+        <sys_id>bef99cf0db057300346ddde74896196a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>HailATAXII</sys_name>
+        <sys_package display_value="TAXII-Driver" source="x_328385_taxii_dri">e076e728db417300346ddde7489619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TAXII-Driver">e076e728db417300346ddde7489619e2</sys_scope>
+        <sys_update_name>sys_auth_profile_basic_bef99cf0db057300346ddde74896196a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 17:39:21</sys_updated_on>
+        <username>guest</username>
+    </sys_auth_profile_basic>
+</record_update>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message">
+    <sys_rest_message action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <authentication_type>basic</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="HailATAXII">bef99cf0db057300346ddde74896196a</basic_auth_profile>
+        <basic_auth_user/>
+        <description>Discover and Hail an OpenTAXII Service</description>
+        <name>TAXII-Driver</name>
+        <oauth2_profile/>
+        <protocol_name/>
+        <rest_endpoint>http://hailataxii.com/</rest_endpoint>
+        <sys_class_name>sys_rest_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 13:55:28</sys_created_on>
+        <sys_id>3376e7e8db417300346ddde7489619ee</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>TAXII-Driver</sys_name>
+        <sys_package display_value="TAXII-Driver" source="x_328385_taxii_dri">e076e728db417300346ddde7489619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TAXII-Driver">e076e728db417300346ddde7489619e2</sys_scope>
+        <sys_update_name>sys_rest_message_3376e7e8db417300346ddde7489619ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 18:11:23</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message>
+</record_update>

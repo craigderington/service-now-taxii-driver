@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn">
+    <sys_rest_message_fn action="INSERT_OR_UPDATE">
+        <authentication_type>basic</authentication_type>
+        <basic_auth_password/>
+        <basic_auth_profile display_value="HailATAXII">bef99cf0db057300346ddde74896196a</basic_auth_profile>
+        <basic_auth_user/>
+        <content>&lt;taxii_11:Poll_Request &#13;
+    xmlns:taxii_11="http://taxii.mitre.org/messages/taxii_xml_binding-1.1"&#13;
+    message_id="${message_id}"&#13;
+    collection_name="${collection_name}"&gt;&#13;
+    &lt;taxii_11:Exclusive_Begin_Timestamp&gt;${begin_date}&lt;/taxii_11:Exclusive_Begin_Timestamp&gt;&#13;
+    &lt;taxii_11:Inclusive_End_Timestamp&gt;${end_date}&lt;/taxii_11:Inclusive_End_Timestamp&gt;&#13;
+    &lt;taxii_11:Poll_Parameters allow_asynch="false"&gt;&#13;
+        &lt;taxii_11:Response_Type&gt;FULL&lt;/taxii_11:Response_Type&gt;&#13;
+    &lt;/taxii_11:Poll_Parameters&gt;&#13;
+&lt;/taxii_11:Poll_Request&gt;</content>
+        <function_name>Poll Collection</function_name>
+        <http_method>post</http_method>
+        <lock>false</lock>
+        <oauth2_profile/>
+        <protocol_name/>
+        <qualified_name>TAXII-Driver [ Poll Collection ]</qualified_name>
+        <rest_endpoint>http://hailataxii.com/taxii-data</rest_endpoint>
+        <rest_message display_value="TAXII-Driver">3376e7e8db417300346ddde7489619ee</rest_message>
+        <sys_class_name>sys_rest_message_fn</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-23 17:51:41</sys_created_on>
+        <sys_id>8bbc50f0db057300346ddde74896196b</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Poll Collection</sys_name>
+        <sys_package display_value="TAXII-Driver" source="x_328385_taxii_dri">e076e728db417300346ddde7489619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TAXII-Driver">e076e728db417300346ddde7489619e2</sys_scope>
+        <sys_update_name>sys_rest_message_fn_8bbc50f0db057300346ddde74896196b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-23 18:10:53</sys_updated_on>
+        <use_basic_auth>false</use_basic_auth>
+        <use_mid_server/>
+        <use_mutual_auth>false</use_mutual_auth>
+    </sys_rest_message_fn>
+</record_update>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CTI Domain Objects" max_length="40" name="x_328385_taxii_dri_cti_domain_objects" type="collection">
+        <element label="Aliases" max_length="4000" name="aliases" type="glide_list"/>
+        <element label="Contact Information" max_length="255" name="contact_information" type="string"/>
+        <element label="created" max_length="40" name="created" type="glide_date_time"/>
+        <element label="Created By Ref" max_length="255" name="created_by_ref" type="string"/>
+        <element label="description" max_length="1024" name="description" type="string"/>
+        <element label="DO Reference ID" max_length="32" name="do_reference_id" reference="x_328385_taxii_dri_cti_domain_object_types" type="reference"/>
+        <element label="External references" max_length="4000" name="external_references" type="glide_list"/>
+        <element label="First Seen" max_length="40" name="first_seen" type="glide_date_time"/>
+        <element label="Goals" max_length="4000" name="goals" type="glide_list"/>
+        <element label="Granular markings" max_length="255" name="granular_markings" type="string"/>
+        <element label="id" max_length="255" name="id" type="string"/>
+        <element label="ID Class" max_length="40" name="id_class" type="string"/>
+        <element label="Kill Chain Phase" max_length="4000" name="kill_chain_phase" type="glide_list"/>
+        <element label="labels" max_length="255" name="labels" type="string"/>
+        <element label="Last Seen" max_length="40" name="last_seen" type="glide_date_time"/>
+        <element label="modified" max_length="40" name="modified" type="glide_date_time"/>
+        <element label="name" max_length="40" name="name" type="string"/>
+        <element label="Object markings ref" max_length="255" name="object_markings_ref" type="string"/>
+        <element label="Pattern" max_length="4000" name="pattern" type="glide_list"/>
+        <element label="Primary Motivation" max_length="40" name="primary_motivation" type="string"/>
+        <element label="Resource Level" max_length="40" name="resource_level" type="string"/>
+        <element label="revoked" max_length="40" name="revoked" type="boolean"/>
+        <element label="Secondary Motivation" max_length="40" name="secondary_motivation" type="string"/>
+        <element label="Sectors" max_length="40" name="sectors" type="string"/>
+        <element label="type" max_length="40" name="type" type="string"/>
+        <element label="Valid From" max_length="40" name="valid_from" type="glide_date_time"/>
+        <element label="Valid To" max_length="40" name="valid_to" type="glide_date_time"/>
+        <index name="index">
+            <element name="do_reference_id"/>
+        </index>
+    </element>
+</database>
