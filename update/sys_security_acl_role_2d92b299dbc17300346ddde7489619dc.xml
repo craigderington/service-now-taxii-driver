@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-25 18:02:45</sys_created_on>
+        <sys_id>2d92b299dbc17300346ddde7489619dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_328385_taxii_dri_malware.x_328385_taxii_dri.malware_user</sys_name>
+        <sys_package display_value="TAXII-Driver" source="x_328385_taxii_dri">e076e728db417300346ddde7489619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TAXII-Driver">e076e728db417300346ddde7489619e2</sys_scope>
+        <sys_security_acl display_value="x_328385_taxii_dri_malware">6992b299dbc17300346ddde7489619d9</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_2d92b299dbc17300346ddde7489619dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-25 18:02:45</sys_updated_on>
+        <sys_user_role display_value="x_328385_taxii_dri.malware_user" name="x_328385_taxii_dri.malware_user">9592b299dbc17300346ddde74896191e</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

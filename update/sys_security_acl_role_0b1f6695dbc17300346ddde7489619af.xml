@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-25 17:47:34</sys_created_on>
+        <sys_id>0b1f6695dbc17300346ddde7489619af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_328385_taxii_dri_identity_types.x_328385_taxii_dri.identity_types_user</sys_name>
+        <sys_package display_value="TAXII-Driver" source="x_328385_taxii_dri">e076e728db417300346ddde7489619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TAXII-Driver">e076e728db417300346ddde7489619e2</sys_scope>
+        <sys_security_acl display_value="x_328385_taxii_dri_identity_types">471f6695dbc17300346ddde7489619ac</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_0b1f6695dbc17300346ddde7489619af</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-25 17:47:34</sys_updated_on>
+        <sys_user_role display_value="x_328385_taxii_dri.identity_types_user" name="x_328385_taxii_dri.identity_types_user">8f1faa15dbc17300346ddde7489619e6</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

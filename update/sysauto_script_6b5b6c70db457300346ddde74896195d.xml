@@ -35,13 +35,13 @@
 		r.setStringParameterNoEscape('end_date', '2016-03-03T12:00:00Z');
 		r.setStringParameterNoEscape('message_id', message_id);
 
-	    //override authentication profile 
-	    //authentication type ='basic'/'oauth2'
+	    // override authentication profile 
+	    // authentication type ='basic'/'oauth2'
 	    r.setAuthenticationProfile('basic', 'bef99cf0db057300346ddde74896196a');
 
-	    //set a MID server name if one wants to run the message on MID
-	    //r.setMIDServer('MY_MID_SERVER');	   
-	    //r.setEccParameter('skip_sensor', true);
+	    // set a MID server name if one wants to run the message on MID
+	    // r.setMIDServer('MY_MID_SERVER');	   
+	    // r.setEccParameter('skip_sensor', true);
 
 		// execute the call to the opentaxxii service
 		var response = r.execute();
@@ -80,14 +80,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-04-23 19:56:42</sys_created_on>
         <sys_id>6b5b6c70db457300346ddde74896195d</sys_id>
-        <sys_mod_count>19</sys_mod_count>
+        <sys_mod_count>20</sys_mod_count>
         <sys_name>TAXII Poll Collection</sys_name>
         <sys_package display_value="TAXII-Driver" source="x_328385_taxii_dri">e076e728db417300346ddde7489619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="TAXII-Driver">e076e728db417300346ddde7489619e2</sys_scope>
         <sys_update_name>sysauto_script_6b5b6c70db457300346ddde74896195d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-04-23 21:32:40</sys_updated_on>
+        <sys_updated_on>2019-04-24 14:37:31</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

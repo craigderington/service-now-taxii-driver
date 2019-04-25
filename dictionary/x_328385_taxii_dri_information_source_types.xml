@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CTI Information Source Types" max_length="40" name="x_328385_taxii_dri_information_source_types" type="collection">
+        <element label="Contributing Sources" max_length="40" name="contributing_sources" type="string"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Identity" max_length="32" name="identity" reference="x_328385_taxii_dri_identities" type="reference"/>
+        <element label="References" max_length="40" name="references" type="string"/>
+        <element label="Role" max_length="4000" name="role" type="glide_list"/>
+        <element label="Time" max_length="40" name="time" type="glide_date_time"/>
+        <element label="Tools" max_length="4000" name="tools" type="glide_list"/>
+        <index name="index">
+            <element name="identity"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CTI Identities" max_length="40" name="x_328385_taxii_dri_identities" type="collection"/>
+</database>

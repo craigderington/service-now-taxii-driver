@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CTI TTP Base Types" max_length="40" name="x_328385_taxii_dri_tto_base_types" type="collection">
+        <element label="ID" max_length="40" name="id" type="string"/>
+        <element label="ID Ref" max_length="40" name="id_ref" type="string"/>
+        <element label="Timestamp" max_length="40" name="timestamp" type="glide_date_time"/>
+    </element>
+</database>

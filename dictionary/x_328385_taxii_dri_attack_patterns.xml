@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CTI Attack Patterns" max_length="40" name="x_328385_taxii_dri_attack_patterns" type="collection">
+        <element label="Capec ID" max_length="255" name="capec_id" type="string"/>
+        <element label="Description" max_length="1400" name="description" type="string"/>
+        <element label="ID" max_length="255" name="id" type="string"/>
+        <element label="ID Ref" max_length="255" name="id_ref" type="string"/>
+        <element label="Short Description" max_length="1000" name="short_description" type="string"/>
+        <element label="Title" max_length="255" name="title" type="string"/>
+    </element>
+</database>

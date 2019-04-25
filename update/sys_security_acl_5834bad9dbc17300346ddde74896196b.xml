@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_328385_taxii_dri_vulnerabilities</description>
+        <name>x_328385_taxii_dri_vulnerabilities</name>
+        <operation display_value="read">read</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-04-25 18:09:46</sys_created_on>
+        <sys_id>5834bad9dbc17300346ddde74896196b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_328385_taxii_dri_vulnerabilities</sys_name>
+        <sys_package display_value="TAXII-Driver" source="x_328385_taxii_dri">e076e728db417300346ddde7489619e2</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TAXII-Driver">e076e728db417300346ddde7489619e2</sys_scope>
+        <sys_update_name>sys_security_acl_5834bad9dbc17300346ddde74896196b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-04-25 18:09:46</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+</record_update>

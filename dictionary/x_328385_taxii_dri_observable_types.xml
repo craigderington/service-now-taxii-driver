@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CTI Observable Types" max_length="40" name="x_328385_taxii_dri_observable_types" type="collection">
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Event" max_length="32" name="event" reference="x_328385_taxii_dri_event_types" type="reference"/>
+        <element label="ID" max_length="40" name="id" type="string"/>
+        <element label="ID Ref" max_length="40" name="id_ref" type="string"/>
+        <element label="Keywords" max_length="40" name="keywords" type="string"/>
+        <element label="Negate" max_length="40" name="negate" type="boolean"/>
+        <element label="Object" max_length="40" name="object" type="string"/>
+        <element label="Observable Composition" max_length="4000" name="observable_composition" type="glide_list"/>
+        <element label="Observable Source" max_length="40" name="observable_source" type="string"/>
+        <element label="Pattern Fidelity" max_length="4000" name="pattern_fidelity" type="glide_list"/>
+        <element label="Sighting Count" max_length="40" name="sighting_count" type="integer"/>
+        <element label="Title" max_length="40" name="title" type="string"/>
+        <index name="index">
+            <element name="event"/>
+        </index>
+    </element>
+</database>

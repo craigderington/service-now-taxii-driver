@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CTI Related Identity Types" max_length="40" name="x_328385_taxii_dri_related_identity_types" type="collection">
+        <element label="Confidence" max_length="40" name="confidence" type="string"/>
+        <element label="Identity" max_length="32" name="identity" reference="x_328385_taxii_dri_identities" type="reference"/>
+        <element label="Relationship" max_length="4000" name="relationship" type="glide_list"/>
+        <element label="TTP" max_length="32" name="ttp" reference="x_328385_taxii_dri_tto_base_types" type="reference"/>
+        <index name="index">
+            <element name="ttp"/>
+        </index>
+        <index name="index2">
+            <element name="identity"/>
+        </index>
+    </element>
+</database>

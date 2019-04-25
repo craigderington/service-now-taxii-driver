@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CTI Event Types" max_length="40" name="x_328385_taxii_dri_event_types" type="collection">
+        <element label="Actions" max_length="255" name="actions" type="string"/>
+        <element label="Description" max_length="255" name="description" type="string"/>
+        <element label="Event" max_length="40" name="event" reference="x_328385_taxii_dri_event_types" type="reference"/>
+        <element label="Frequency" max_length="40" name="frequency" type="string"/>
+        <element label="ID" max_length="40" name="id" type="string"/>
+        <element label="ID Ref" max_length="40" name="id_ref" type="string"/>
+        <element label="Locations" max_length="4000" name="locations" type="glide_list"/>
+        <element label="Observation Method" max_length="255" name="observation_method" type="string"/>
+        <element label="Type" max_length="40" name="type" type="string"/>
+    </element>
+</database>

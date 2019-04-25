@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CTI Indicators" max_length="40" name="x_328385_taxii_dri_indicators" type="collection">
+        <element label="Alternative ID" max_length="40" name="alternative_id" type="string"/>
+        <element label="Composite Indicator Expression" max_length="4000" name="composite_indicator_expression" type="glide_list"/>
+        <element label="Confidence" max_length="40" name="confidence" type="string"/>
+        <element label="Description" max_length="40" name="description" type="string"/>
+        <element label="Handling" max_length="40" name="handling" type="string"/>
+        <element label="ID" max_length="40" name="id" type="string"/>
+        <element label="ID Ref" max_length="40" name="id_ref" type="string"/>
+        <element label="Indicated TTP" max_length="32" name="indicated_ttp" reference="x_328385_taxii_dri_tto_base_types" type="reference"/>
+        <element label="Kill Chain Phases" max_length="4000" name="kill_chain_phases" type="glide_list"/>
+        <element label="Likely Impact" max_length="40" name="likely_impact" type="string"/>
+        <element label="Negate" max_length="40" name="negate" type="boolean"/>
+        <element label="Observable" max_length="32" name="observable" reference="x_328385_taxii_dri_observable_types" type="reference"/>
+        <element label="Producer" max_length="32" name="producer" reference="x_328385_taxii_dri_identities" type="reference"/>
+        <element label="Related Campaigns" max_length="4000" name="related_campaigns" type="glide_list"/>
+        <element label="Related Indicators" max_length="4000" name="related_indicators" type="glide_list"/>
+        <element label="Related Packages" max_length="4000" name="related_packages" type="glide_list"/>
+        <element label="Short Description" max_length="40" name="short_description" type="string"/>
+        <element label="Sightings" max_length="40" name="sightings" type="integer"/>
+        <element label="Suggested COA" max_length="40" name="suggested_coa" type="string"/>
+        <element label="Test Mechanisms" max_length="4000" name="test_mechanisms" type="glide_list"/>
+        <element label="Timestamp" max_length="40" name="timestamp" type="string"/>
+        <element label="Title" max_length="40" name="title" type="string"/>
+        <element label="Type" max_length="40" name="type" type="string"/>
+        <element label="Valid Time Position" max_length="40" name="valid_time_position" type="glide_date_time"/>
+        <element label="Version" max_length="40" name="version" type="string"/>
+        <index name="index">
+            <element name="indicated_ttp"/>
+        </index>
+        <index name="index2">
+            <element name="observable"/>
+        </index>
+        <index name="index3">
+            <element name="producer"/>
+        </index>
+    </element>
+</database>

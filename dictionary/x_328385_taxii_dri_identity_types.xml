@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="CTI Identity Types" max_length="40" name="x_328385_taxii_dri_identity_types" type="collection">
+        <element label="ID" max_length="40" name="id" type="string"/>
+        <element label="ID Ref" max_length="40" name="id_ref" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Related Identities" max_length="32" name="related_identities" reference="x_328385_taxii_dri_related_identity_types" type="reference"/>
+        <index name="index">
+            <element name="related_identities"/>
+        </index>
+    </element>
+</database>
