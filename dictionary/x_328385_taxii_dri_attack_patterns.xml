@@ -4,7 +4,11 @@
         <element label="Description" max_length="1400" name="description" type="string"/>
         <element label="ID" max_length="255" name="id" type="string"/>
         <element label="ID Ref" max_length="255" name="id_ref" type="string"/>
+        <element label="Object Type" max_length="32" name="object_type" reference="x_328385_taxii_dri_cti_domain_object_types" type="reference"/>
         <element label="Short Description" max_length="1000" name="short_description" type="string"/>
         <element label="Title" max_length="255" name="title" type="string"/>
+        <index name="index">
+            <element name="object_type"/>
+        </index>
     </element>
 </database>

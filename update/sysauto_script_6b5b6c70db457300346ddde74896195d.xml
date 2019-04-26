@@ -54,14 +54,8 @@
 			gs.info("TAXII Driver HTTP Status: " + httpStatus);
 			
 			// set up the xml document
-			var xmlDoc = new XMLDocument2();
-			
-			// parse the response
-			xmlDoc.parseXML(responseBody);
-			
-			// declare vars from xml body
-			// var indicatorId = xmlDoc.getNodeText("//indicator.Title");
-			gs.info("TAXII Driver XML Response: " + xmlDoc.toString());			
+			var jsonObj = getJsonObjectFromXmlBody(responseBody);
+			gs.info("TAXII Driver: " + jsonObj.result.title);					
 					
 			
 		} else {
@@ -75,19 +69,64 @@
 		gs.info("TAXII Driver Error: " + message);
 	}
 	
+	// parse xml to json functions
+	function getJsonObjectFromXmlBody(xmlString) {
+        var returnObject = {};
+        var xmlDoc = new XMLDocument2();
+        xmlDoc.parseXML(xmlString);
+        var resultsNode = xmlDoc.getNode("//stix:Indicators");
+        if (resultsNode) {
+            var resultsNodeIterator = resultsNode.getChildNodeIterator();
+            returnObject = getResultsObject(resultsNodeIterator);
+        }
+
+        return returnObject;
+    }
+
+    function getResultsObject(resultsNodeIterator) {
+       var resultsObject = {};
+       if (resultsNodeIterator) {
+           while (resultsNodeIterator.hasNext()) {
+               var childNode = resultsNodeIterator.next();
+               if (/^stix:Indicator$/i.test(childNode.getNodeName())) {
+                   resultsObject.result = getResultObject(childNode);
+               }
+           }
+      }
+      return resultsObject;
+    }
+
+    function getResultObject(resultNode) {
+        var resultObject = {};
+        var resultNodeIterator = resultNode.getChildNodeIterator();
+        while (resultNodeIterator.hasNext()) {
+            var childNode = resultNodeIterator.next();
+            if (/^indicator:Title$/i.test(childNode.getNodeName())) {
+                var textContent = childNode.getTextContent();
+                textContent = textContent.replace(/\\/g, '');
+                textContent = "{\"results\":" + textContent + "}";
+                resultObject.title = textContent;
+            }
+        }
+        
+        return resultObject;
+    }    
+
+	
+	
 })();]]></script>
         <sys_class_name>sysauto_script</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2019-04-23 19:56:42</sys_created_on>
         <sys_id>6b5b6c70db457300346ddde74896195d</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>TAXII Poll Collection</sys_name>
         <sys_package display_value="TAXII-Driver" source="x_328385_taxii_dri">e076e728db417300346ddde7489619e2</sys_package>
         <sys_policy/>
         <sys_scope display_value="TAXII-Driver">e076e728db417300346ddde7489619e2</sys_scope>
         <sys_update_name>sysauto_script_6b5b6c70db457300346ddde74896195d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2019-04-24 14:37:31</sys_updated_on>
+        <sys_updated_on>2019-04-26 18:46:30</sys_updated_on>
         <upgrade_safe>false</upgrade_safe>
     </sysauto_script>
 </record_update>

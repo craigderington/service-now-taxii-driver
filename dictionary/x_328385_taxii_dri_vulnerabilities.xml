@@ -5,6 +5,10 @@
         <element label="ID" max_length="40" name="id" type="string"/>
         <element label="ID Ref" max_length="40" name="id_ref" type="string"/>
         <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Object Type" max_length="32" name="object_type" reference="x_328385_taxii_dri_cti_domain_object_types" type="reference"/>
         <element label="Type" max_length="40" name="type" type="string"/>
+        <index name="index">
+            <element name="object_type"/>
+        </index>
     </element>
 </database>

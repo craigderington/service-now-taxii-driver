@@ -11,6 +11,7 @@
         <element label="Kill Chain Phases" max_length="4000" name="kill_chain_phases" type="glide_list"/>
         <element label="Likely Impact" max_length="40" name="likely_impact" type="string"/>
         <element label="Negate" max_length="40" name="negate" type="boolean"/>
+        <element label="Object Type" max_length="32" name="object_type" reference="x_328385_taxii_dri_cti_domain_object_types" type="reference"/>
         <element label="Observable" max_length="32" name="observable" reference="x_328385_taxii_dri_observable_types" type="reference"/>
         <element label="Producer" max_length="32" name="producer" reference="x_328385_taxii_dri_identities" type="reference"/>
         <element label="Related Campaigns" max_length="4000" name="related_campaigns" type="glide_list"/>
@@ -26,12 +27,15 @@
         <element label="Valid Time Position" max_length="40" name="valid_time_position" type="glide_date_time"/>
         <element label="Version" max_length="40" name="version" type="string"/>
         <index name="index">
-            <element name="indicated_ttp"/>
+            <element name="object_type"/>
         </index>
         <index name="index2">
-            <element name="observable"/>
+            <element name="indicated_ttp"/>
         </index>
         <index name="index3">
+            <element name="observable"/>
+        </index>
+        <index name="index4">
             <element name="producer"/>
         </index>
     </element>

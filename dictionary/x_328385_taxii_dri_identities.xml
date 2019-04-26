@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="CTI Identities" max_length="40" name="x_328385_taxii_dri_identities" type="collection"/>
+    <element label="CTI Identities" max_length="40" name="x_328385_taxii_dri_identities" type="collection">
+        <element label="Identity Type" max_length="32" name="identity_type" reference="x_328385_taxii_dri_identity_types" type="reference"/>
+        <element label="Object Type" max_length="32" name="object_type" reference="x_328385_taxii_dri_cti_domain_object_types" type="reference"/>
+        <index name="index">
+            <element name="object_type"/>
+        </index>
+        <index name="index2">
+            <element name="identity_type"/>
+        </index>
+    </element>
 </database>
